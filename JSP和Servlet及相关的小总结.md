@@ -133,12 +133,16 @@ return "Hello World!";
 
 ### application
 
+> ServletContext的实例，代表JSP所属应用本身。
+
 作用
 
 1. 能够让整个Web App共享数据
 2. 能够读取web.xml配置文件的参数，避免硬编码。如可读取写在web.xml文件的数据库连接参数。
 
 ### config
+
+> ServletConfig的实例，代表JSP的配置信息。
 
 作用
 
@@ -156,7 +160,7 @@ return "Hello World!";
 
 ### out
 
-> 是页面的输出流，用于在页面上输出变量值和常量。
+> JspWriter的实例，是页面的输出流，用于在页面上输出变量值和常量。
 > 
 > 它是字符流不能输出字节流的东西。例如（pdf、mp3）
 
@@ -164,7 +168,9 @@ return "Hello World!";
 
 ### pageContext
 
-> 该对象主要用于访问JSP之间的共享数据，可以访问和设置page、request、session、application范围的变量。
+> PageContext的实例，代表JSP页面上下文，可以访问页面中的共享数据。getServletContext、getServletConfig等。
+
+> 可以访问和设置page、request、session、application范围的变量。
 
 ```JSP
 pageContext.getAttribute(String name);
@@ -183,7 +189,7 @@ PageContext.APPLICATION_SCOPE
 
 ### request
 
-> 每个request对象封装着一次用户请求和请求用的参数。
+> HttpServletRequest的实例，每个request对象封装着一次用户请求和请求用的参数。
 >
 > 用户通过GET或POST请求发送参数到某个JSP页面，那么目标JSP页面可以使用request对象读出来。
 >
@@ -197,7 +203,7 @@ PageContext.APPLICATION_SCOPE
 
 ### response
 
-> 代表服务器对客户端的响应。需要生成非字符响应的情况，就应该使用response而不是out。
+> HttpServletResponse的实例，代表服务器对客户端的响应。需要生成非字符响应的情况，就应该使用response而不是out。
 
 作用
 
@@ -301,3 +307,4 @@ ServletConfig ：能够取得当前Servlet配置参数的类
 
 客户端先访问Servlet，Servlet调用Model，根据Model返回的结果，Servlet再forward到指定的JSP页面。
 
+## JSP 2的自定义标签
