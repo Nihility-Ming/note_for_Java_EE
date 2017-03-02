@@ -93,13 +93,15 @@ public class ServletDemo3 extends HttpServlet {
 
 		System.out.println(user);
 	}
-	
+
 	// 使用框架生成JavaBean
-	private void use_framework_build_entity(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void use_framework_build_entity(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		User user = new User();
 		try {
 			BeanUtils.populate(user, request.getParameterMap());
 			System.out.println(user);
+			response.getWriter().println(user);
 		} catch (IllegalAccessException | InvocationTargetException e) {
 			e.printStackTrace();
 		}

@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="day09_00_HttpServletResponse" path="/day09_00_HttpServletResponse" reloadable="true" source="org.eclipse.jst.jee.server:day09_00_HttpServletResponse"/><Context docBase="day09_01_HttpServletRequest" path="/day09_01_HttpServletRequest" reloadable="true" source="org.eclipse.jst.jee.server:day09_01_HttpServletRequest"/></Host>
+      <Context docBase="day09_00_HttpServletResponse" path="/day09_00_HttpServletResponse" reloadable="true" source="org.eclipse.jst.jee.server:day09_00_HttpServletResponse"/><Context docBase="day09_01_HttpServletRequest" path="/day09_01_HttpServletRequest" reloadable="true" source="org.eclipse.jst.jee.server:day09_01_HttpServletRequest"/><Context docBase="day10_00_Cookie" path="/day10_00_Cookie" reloadable="true" source="org.eclipse.jst.jee.server:day10_00_Cookie"/><Context docBase="day10_01_HttpSession" path="/day10_01_HttpSession" reloadable="true" source="org.eclipse.jst.jee.server:day10_01_HttpSession"/><Context docBase="day11_00_jsp" path="/day11_00_jsp" reloadable="true" source="org.eclipse.jst.jee.server:day11_00_jsp"/><Context docBase="day11_01_el" path="/day11_01_el" reloadable="true" source="org.eclipse.jst.jee.server:day11_01_el"/><Context docBase="day11_02_jstl" path="/day11_02_jstl" reloadable="true" source="org.eclipse.jst.jee.server:day11_02_jstl"/></Host>
     </Engine>
   </Service>
 </Server>

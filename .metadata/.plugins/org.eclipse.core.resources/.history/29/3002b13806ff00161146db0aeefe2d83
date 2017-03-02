@@ -1,0 +1,27 @@
+package com.iphone567.history;
+
+import java.util.ArrayList;
+
+public class BookDAO {
+	private ArrayList<Book> books = new ArrayList<Book>();
+	{
+		books.add(new Book("1", "西游记", "吴承恩"));
+		books.add(new Book("2", "红楼梦", "曹雪芹"));
+		books.add(new Book("3", "三国演义", "罗贯中"));
+		books.add(new Book("4", "水浒传", "施耐庵"));
+	}
+	
+	public Book findBookById(String id) {
+		for (int i = 0; i < books.size(); i++) {
+			Book book = books.get(i);
+			if(book.getId().equals(id)) {
+				return book;
+			}
+		}
+		return null;
+	}
+	
+	public Book[] findAllBooks() {
+		return (Book[]) this.books.toArray();
+	}
+}

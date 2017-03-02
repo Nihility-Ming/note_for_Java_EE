@@ -1,0 +1,14 @@
+package com.iphone567.history;
+
+import java.util.ArrayList;
+
+public class BookDAO {
+	private ArrayList<Book> books = new ArrayList<>();
+	{
+		books.add(new Book("1", "西游记", "吴承恩"));
+		books.add(new Book("2", "红楼梦", "曹雪芹"));
+		books.add(new Book("3", "三国演义", "罗贯中"));
+		books.add(new Book("4", "水浒传", "施耐庵"));
+	}
+	
+}

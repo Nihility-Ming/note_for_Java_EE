@@ -1,0 +1,30 @@
+package com.iphone567.demo;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class CookieDemo2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.setContentType("text/html; charset=utf-8");
+		response.setCharacterEncoding("utf-8");
+		
+		// 创建cookie
+		Cookie lastAccessTimeCookie = new Cookie("lastAccessTime", System.currentTimeMillis() + "");
+		// 设置过期时间是5分钟，过期时间单位是秒
+		lastAccessTimeCookie.setMaxAge(60 * 5);
+		// 设置路径，作为cookie的标识
+		lastAccessTimeCookie.setPath("/");
+		// 添加最近访问时间的cookie
+		response.addCookie(lastAccessTimeCookie);
+		
+		response.getWriter().println("成功创建lastAccessTime cookie!");
+	}
+
+}
