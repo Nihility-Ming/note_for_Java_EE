@@ -29,7 +29,7 @@
 	if(request.getParameter("param")==null) response.sendRedirect("5.jsp?param=mylove");
 </pre>
 	<hr />
-	<i>隐式对象(除了pageContext是PageContext类型，其他都是Map类型)</i>
+	<i>隐式对象</i>
 	<p>\${pageScope.page} ---------- ${pageScope.page}</p>
 	<p>\${requestScope.request} ---------- ${requestScope.request}</p>
 	<p>\${sessionScope.session} ---------- ${sessionScope.session}</p>

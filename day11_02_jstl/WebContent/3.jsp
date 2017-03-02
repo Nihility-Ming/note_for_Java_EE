@@ -12,21 +12,21 @@
 </head>
 <body>
 
-<!-- foreach语句 -->
-<c:forEach var="i" begin="1" end="10" step="1">
+	<!-- foreach语句 -->
+	<c:forEach var="i" begin="1" end="10" step="1">
 ${i} <br />
-</c:forEach>
-<hr />
-<%
-	List<String> list = new ArrayList<String>();
-	list.add("abbc");
-	list.add("xx");
-	list.add("ccc");
-	request.setAttribute("list", list);
-%>
-<c:forEach items="${list }" var="l">
+	</c:forEach>
+	<hr />
+	<%
+		List<String> list = new ArrayList<String>();
+		list.add("abbc");
+		list.add("xx");
+		list.add("ccc");
+		request.setAttribute("list", list);
+	%>
+	<c:forEach items="${list }" var="l">
 ${l } <br />
-</c:forEach>
+	</c:forEach>
 
 </body>
 </html>
