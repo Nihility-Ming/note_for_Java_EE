@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/TallyManager/src/com/iphone456/tally/app/App.java"/>
+<listEntry value="/TallyManager/src/com/iphone567/tally/app/App.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.iphone456.tally.app.App"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.iphone567.tally.app.App"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TallyManager"/>
 </launchConfiguration>

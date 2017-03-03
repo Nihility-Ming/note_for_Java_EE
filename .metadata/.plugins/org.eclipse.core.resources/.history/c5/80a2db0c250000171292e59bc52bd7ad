@@ -1,0 +1,17 @@
+package com.iphone567.test;
+
+import java.sql.Connection;
+
+import org.junit.Test;
+
+import com.iphone567.utils.C3P0Utils;
+
+public class C3P0UtilsTest {
+
+	@Test
+	public void test() {
+		Connection connection = C3P0Utils.getConnection();
+		System.out.println(connection);
+	}
+
+}

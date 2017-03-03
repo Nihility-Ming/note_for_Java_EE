@@ -1,0 +1,29 @@
+package com.iphone567.user.service.imp;
+
+import com.iphone567.user.domain.User;
+import com.iphone567.user.service.UserService;
+
+public class UserServiceImp implements UserService {
+
+	@Override
+	public int register(User user) {
+		try {
+			
+		} catch(Exception e) {
+			
+		}
+		
+		return 1;
+	}
+
+	@Override
+	public int login(User user) {
+		return 1;
+	}
+
+	@Override
+	public int updateInfo(User user) {
+		return 1;
+	}
+
+}

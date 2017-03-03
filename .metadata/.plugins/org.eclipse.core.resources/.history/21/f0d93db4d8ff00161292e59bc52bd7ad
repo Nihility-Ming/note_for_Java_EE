@@ -1,0 +1,7 @@
+package com.iphone567.user.dao.imp;
+
+import com.iphone567.user.dao.UserDAO;
+
+public class UserDAOImp implements UserDAO {
+
+}

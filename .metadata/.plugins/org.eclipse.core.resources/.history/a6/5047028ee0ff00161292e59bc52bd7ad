@@ -1,0 +1,9 @@
+package com.iphone567.user.service;
+
+import com.iphone567.user.domain.User;
+
+public interface UserService {
+	public int register(User user);
+	public int login(User user);
+	public int updateInfo(User user);
+}
