@@ -24,7 +24,7 @@ public class C3P0UtilsTest {
 
 		try {
 			statement = connection.prepareStatement("insert into gjp_zhangwu values(null, ?, ?, ?, ?, ?)");
-			statement.setString(1, "吃点东西");
+			statement.setString(1, "马勒戈壁");
 			statement.setDouble(2, 199.54);
 			statement.setString(3, "支付宝");
 			statement.setString(4, "2009-01-01");

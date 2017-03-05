@@ -1,0 +1,8 @@
+package com.iphone567.domain;
+
+public class Zhangwu {
+
+	public Zhangwu() {
+	}
+
+}

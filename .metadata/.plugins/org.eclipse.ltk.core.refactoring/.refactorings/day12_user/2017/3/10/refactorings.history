@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.iphone567.user.domain&apos; to &apos;day17_listener/src&apos;&#x0A;- Original project: &apos;day12_user&apos;&#x0A;- Destination element: &apos;day17_listener/src&apos;&#x0A;- Original element: &apos;day12_user/src/com.iphone567.user.domain&apos;" description="Copy package" destination="=day17_listener/src" element1="/src&lt;com.iphone567.user.domain" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1488697411264" version="1.0"/>
+</session>

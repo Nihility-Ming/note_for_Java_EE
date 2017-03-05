@@ -58,9 +58,14 @@ public class TallyView {
 		System.out.println("1.添加账务 2.编辑账务 3.删除账务 4.查询账务 5.退出系统");
 		System.out.println("请输入要操作的功能序号[1-5]:");
 
-		int selectedIndex = this.scanner.nextInt();
-		if (this.delegate != null)
-			this.delegate.tallyViewDidSelectedWelcomeIndex(selectedIndex);
+		int selectedIndex = 0;
+		try {
+			selectedIndex = Integer.parseInt(this.scanner.next());
+		} catch (Exception e) {
+		} finally {
+			if (this.delegate != null)
+				this.delegate.tallyViewDidSelectedWelcomeIndex(selectedIndex);
+		}
 	}
 
 	public void showTallies(List<Tally> tallies) {
@@ -72,21 +77,26 @@ public class TallyView {
 	}
 
 	public void showAddTallyInput() {
-		System.out.println();
-		System.out.println("请输入支出类型：");
-		String flname = this.scanner.next();
-		System.out.println("请输入支出金额：");
-		Double money = this.scanner.nextDouble();
-		System.out.println("请输入支出途径：");
-		String zhanghu = this.scanner.next();
-		System.out.println("请输入支出时间：");
-		String createtime = this.scanner.next();
-		System.out.println("请输入支出描述：");
-		String description = this.scanner.next();
-		Tally tally = new Tally(null, flname, money, zhanghu, createtime, description);
+		try {
+			System.out.println();
+			System.out.println("请输入支出类型：");
+			String flname = this.scanner.next();
+			System.out.println("请输入支出金额：");
+			Double money = 0.0;
+			money = Double.parseDouble(this.scanner.next());
+			System.out.println("请输入支出途径：");
+			String zhanghu = this.scanner.next();
+			System.out.println("请输入支出时间：");
+			String createtime = this.scanner.next();
+			System.out.println("请输入支出描述：");
+			String description = this.scanner.next();
+			Tally tally = new Tally(null, flname, money, zhanghu, createtime, description);
 
-		if (this.delegate != null)
-			this.delegate.tallyViewWillAddTally(tally);
+			if (this.delegate != null)
+				this.delegate.tallyViewWillAddTally(tally);
+		} catch (Exception e) {
+			System.out.println("输入错误！");
+		}
 	}
 
 	public void showAddTallySuccess() {
@@ -100,24 +110,28 @@ public class TallyView {
 	}
 
 	public void showEditTallyInput() {
-		System.out.println();
-		System.out.println("请输入需要编辑账务的ID：");
-		Integer id = this.scanner.nextInt();
-		if (this.delegate.tallyViewWillEditTally(id)) {
-			System.out.println("正在编辑ID" + id + "：");
-			System.out.println("请输入支出类型：");
-			String flname = this.scanner.next();
-			System.out.println("请输入支出金额：");
-			Double money = this.scanner.nextDouble();
-			System.out.println("请输入支出途径：");
-			String zhanghu = this.scanner.next();
-			System.out.println("请输入支出时间：");
-			String createtime = this.scanner.next();
-			System.out.println("请输入支出描述：");
-			String description = this.scanner.next();
-			Tally tally = new Tally(id, flname, money, zhanghu, createtime, description);
-			if (this.delegate != null)
-				this.delegate.tallyViewSendEditTally(tally);
+		try {
+			System.out.println();
+			System.out.println("请输入需要编辑账务的ID：");
+			Integer id = Integer.parseInt(this.scanner.next());
+			if (this.delegate.tallyViewWillEditTally(id)) {
+				System.out.println("正在编辑ID" + id + "：");
+				System.out.println("请输入支出类型：");
+				String flname = this.scanner.next();
+				System.out.println("请输入支出金额：");
+				Double money = Double.parseDouble(this.scanner.next());
+				System.out.println("请输入支出途径：");
+				String zhanghu = this.scanner.next();
+				System.out.println("请输入支出时间：");
+				String createtime = this.scanner.next();
+				System.out.println("请输入支出描述：");
+				String description = this.scanner.next();
+				Tally tally = new Tally(id, flname, money, zhanghu, createtime, description);
+				if (this.delegate != null)
+					this.delegate.tallyViewSendEditTally(tally);
+			}
+		} catch (Exception e) {
+			System.out.println("非法输入！");
 		}
 	}
 
@@ -153,15 +167,16 @@ public class TallyView {
 	}
 
 	public void showCheckTallyInput() {
+
 		System.out.println();
 		System.out.println("1.列出所有数据 2.列出指定日期的数据");
-		switch (this.scanner.nextInt()) {
-		case 1:
+		switch (this.scanner.next()) {
+		case "1":
 			if (this.delegate != null) {
 				this.delegate.tallyViewWillCheckTallies();
 			}
 			break;
-		case 2:
+		case "2":
 			System.out.println("请输入需要查询账务的开始日期(yyyy-MM-dd)：");
 			String startDate = this.scanner.next();
 			System.out.println("请输入需要查询账务的结束日期(yyyy-MM-dd)：");

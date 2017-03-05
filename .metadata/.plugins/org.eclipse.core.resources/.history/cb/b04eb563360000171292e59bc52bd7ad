@@ -1,0 +1,33 @@
+package com.iphone567.test;
+
+import java.sql.SQLException;
+import java.util.Date;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.junit.Test;
+
+import com.iphone567.utils.C3P0Utils;
+
+public class DBUtilsTest {
+	
+	private QueryRunner queryRunner = new QueryRunner(C3P0Utils.getDataSource());
+
+	/**
+	 * 测试批量操作
+	 */
+	@Test
+	public void testBatch() {
+		Object[][] params = new Object[3][];
+		for(int i=0; i<params.length; i++) {
+			params[i] = new Object[]{"flname"+i, i+1000.0, "zhanghu", new Date(System.currentTimeMillis()+(i*1000000000)), "description"};
+		}
+		
+		try {
+			queryRunner.batch("insert into gjp_zhangwu values(null,?,?,?,?,?)", params);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

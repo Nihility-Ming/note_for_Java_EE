@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Context>
-	<Resource name="jdbc/tally" auth="Container" type="javax.sql.DataSource"
-		username="root" password="root" driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/tally?characterEncoding=utf8"
-		maxActive="100" maxWait="10000" maxIdle="10" />
-</Context>

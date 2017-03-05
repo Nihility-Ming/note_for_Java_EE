@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyFilter.java&apos; to &apos;com.iphone567.filter.MyFilter.java&apos;&#x0A;- Original project: &apos;day17_filter&apos;&#x0A;- Destination element: &apos;com.iphone567.filter.MyFilter.java&apos;&#x0A;- Original element: &apos;com.iphone567.filter.MyFilter.java&apos;" description="Copy compilation unit" destination="/src&lt;com.iphone567.filter{MyFilter.java" element1="/src&lt;com.iphone567.filter{MyFilter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1488704880162" units="1" version="1.0"/>
+</session>
