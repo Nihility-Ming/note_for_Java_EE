@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.iphone567.history.Book"/>
-<fullyQualifiedTypeName name="com.iphone567.history.BookDAO"/>
-<fullyQualifiedTypeName name="com.iphone567.history.BookService"/>
-<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="com.iphone567.shop.BookService"/>
@@ -20,7 +13,6 @@
 <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.iphone567.utils.DBUtils"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.PageContext"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
 <fullyQualifiedTypeName name="com.iphone567.user.dao.UserDAO"/>
@@ -42,7 +34,6 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
 <fullyQualifiedTypeName name="com.iphone567.domain.Zhangwu"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
 <fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.ArrayHandler"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +51,13 @@
 <fullyQualifiedTypeName name="net.sf.json.JSONObject"/>
 <fullyQualifiedTypeName name="net.sf.json.JSONFunction"/>
 <fullyQualifiedTypeName name="com.iphone567.user.domain.Result"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.dom.Filter"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="javax.servlet.Filter"/>
 </qualifiedTypeNameHistroy>

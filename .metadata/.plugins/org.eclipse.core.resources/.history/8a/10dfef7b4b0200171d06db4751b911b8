@@ -1,0 +1,12 @@
+package com.iphone567.demo;
+
+import com.iphone567.annotation.MyAnnotation;
+
+@MyAnnotation(name="我的测试")
+public class MyTest {
+
+	public MyTest() {
+		
+	}
+
+}

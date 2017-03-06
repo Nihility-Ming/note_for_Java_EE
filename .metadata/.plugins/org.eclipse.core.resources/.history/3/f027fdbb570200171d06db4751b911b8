@@ -1,0 +1,24 @@
+package com.iphone567.demo;
+
+import java.lang.reflect.Method;
+
+import com.iphone567.annotation.MyTest;
+
+@SuppressWarnings("all")
+public class Main {
+
+	public static void main(String[] args)
+			throws Exception {
+		Method[] methods = Demo.class.getMethods();
+		for (Method method : methods) {
+			// 判断当前方法是否有@MyTest修饰
+			boolean annotationPresent = method.isAnnotationPresent(MyTest.class);
+			if (annotationPresent) {
+				MyTest mytest = (MyTest) method.getAnnotations()[0];
+				Object newInstance = Demo.class.newInstance();
+				method.invoke(newInstance, null);
+			}
+		}
+	}
+
+}

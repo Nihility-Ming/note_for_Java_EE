@@ -1,0 +1,8 @@
+package com.iphone567.demo;
+
+public class MyTest {
+
+	public MyTest() {
+	}
+
+}

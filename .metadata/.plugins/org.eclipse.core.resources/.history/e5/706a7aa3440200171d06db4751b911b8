@@ -1,0 +1,21 @@
+package com.iphone567.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+public class Person {
+	public static void main(String[] args) {
+		final Dog dog = new Dog();
+		
+		Dosomething newProxyInstance = (Dosomething)Proxy.newProxyInstance(Dog.class.getClassLoader(), Dog.class.getInterfaces(), new InvocationHandler() {
+			
+			@Override
+			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+				return method.invoke(dog, args);
+			}
+		});
+		
+		newProxyInstance.doSomething("hello world!");
+	}
+}
