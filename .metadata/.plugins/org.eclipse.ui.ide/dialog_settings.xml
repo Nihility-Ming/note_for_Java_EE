@@ -2,9 +2,11 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Volumes/Nihility&apos;Driver/视频教程/Java/01_最新黑马19期Java就业班+Hadoop大数据/【阶段01】Java Web/day22_bookStore商城/项目源代码"/>
+			<item value="/Users/Nihility-Ming/Downloads/JavaMiniBarCMS-master"/>
 			<item value="/Users/Nihility-Ming/Desktop/note_for_Java_EE/TallyManager"/>
 			<item value="/Users/Nihility-Ming/Desktop/note_for_Java_EE/day09_01_HttpServletRequest"/>
 			<item value="/Users/Nihility-Ming/Desktop/note_for_Java_EE/day09_00_HttpServletResponse"/>
