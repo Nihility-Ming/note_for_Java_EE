@@ -11,4 +11,7 @@
 			<item value="400"/>
 		</list>
 	</section>
+	<section name="GitCommitSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+	</section>
 </section>

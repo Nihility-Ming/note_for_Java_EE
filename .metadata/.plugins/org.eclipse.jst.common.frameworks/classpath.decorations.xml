@@ -1,0 +1,7 @@
+<classpath>
+  <container id="day24_struts_template!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/Users/Nihility-Ming/Desktop/note_for_Java_EE/day24_struts_template/WebContent/WEB-INF/lib/xwork-core-2.3.15.3.jar">
+      <source-attachment-path>/Volumes/Nihility'Driver/视频教程/Java/01_最新黑马19期Java就业班+Hadoop大数据/【阶段02】Struts/day24-struts/源码/struts-2.3.15.3/src</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

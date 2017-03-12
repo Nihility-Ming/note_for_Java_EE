@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>点名神器 - Nihility</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<style type="text/css">
+	html, body {
+		background:url(images/bg.jpeg);
+		background-repeat:no-repeat;
+	}
+	h1 {
+		font-size: 100px;
+		height-line: 50px;
+		color: white;
+		text-align:center;
+	}
+	.action_btn {
+		border-radius: 10px;
+		margin: 0 auto;
+		text-decoration: none;
+		display: block;
+		background-color: black;
+		color: #FFF;
+		border: 1px solid gray;
+		height: 50px;
+		width: 150px;
+		line-height: 50px;
+		font-size: 30px;
+		text-align: center;
+	}
+	.action_btn:hover {
+		color: black;
+		background-color: white;
+	}
+	.name {
+		font-size: 40px;
+		text-align: center;
+		color: white;
+	}
+	.author {
+		font-size: 20px;
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>点名神器<span class="author"> by Nihility</span></h1>
+		<a href="javascript:start()" class="action_btn" id="btn">开始</a>
+		<h3 class="name" id="name"></h3>
+		<audio id="music" loop preload></audio>
+	</div>
+	<script type="text/javascript">
+	var names = ["张静初", "张敬轩", "张可可", "张可颐", "张可芝张克帆", "张澜澜", "张立基", "张曼玉", "张敏张明敏", "张娜拉", "张蔷", "张清芳", "张善为张韶涵", "张庭", "张伟进", "张卫健", "张文慈张信哲", "张学友", "张亚飞", "张延", "张瑶张耀扬", "张也", "张茵", "张雨生", "张宇张玉华", "张远", "张震岳", "张振富", "张振宇张智成", "张智霖", "张咪", "张梓楦", "张焱张钰", "张靓颖", "赵本山", "赵传", "赵汉善赵静怡", "赵仁成", "赵颂茹", "赵文瑄", "赵宪宰赵学而", "赵雅芝", "赵咏华", "赵在炫", "赵之璧赵自强", "赵薇", "赵媛媛", "珍妮佛·安妮斯顿", "珍妮弗·洛佩兹甄妮", "甄子丹", "郑多彬", "郑钧", "郑融郑少秋", "郑希怡", "郑新玮", "郑秀文", "郑秀珍郑绪岚", "郑雪儿", "郑伊健", "郑宇成", "郑元畅郑源", "郑允浩", "郑智化", "郑中基", "郑怡织田裕二", "指南针乐队", "中国辣妹", "中国力量", "中国娃娃中坚份子", "中山美穗", "钟楚红", "钟汉良", "钟丽缇钟真", "钟镇涛", "钟汶", "周笔畅", "周冰倩周传雄", "周丹", "周国贤", "周海媚", "周华健周慧敏", "周杰", "周杰伦", "周俊伟", "周丽淇周鹏", "周奇奇", "周润发", "周涛", "周星驰周迅", "周彦宏", "周永恒", "周渝民", "周治平周子寒", "周子淇", "周蕙", "周汶锜", "周璇朱迪·福斯特", "朱逢博", "朱慧珊", "朱丽叶·比诺什", "朱玲玲朱明瑛", "朱孝天", "朱茵", "朱哲琴", "朱妍朱媛媛", "朱桦", "猪头皮", "竹野内丰", "祝钒刚茱丽娅·罗伯茨", "椎名林檎", "卓文萱", "卓依婷", "紫龙子曰乐队", "邹爽", "祖海", "左小青"];
+	var timeIntervalID;
+	var btn = document.getElementById("btn");
+	
+	var music = {"playLoopMusic" : function(){
+		var music = document.getElementById("music");
+		music.src= "src/m.mp3";
+		music.loop = true;
+		music.play();
+	}, "playStopMusic" : function() {
+		var music = document.getElementById("music");
+		music.src= "src/m2.mp3";
+		music.loop = false;
+		music.play();
+	}};
+	
+	function start() {
+		changeBtn();
+	}
+	
+	function changeName() {
+		var name = document.getElementById("name");
+		var rd = Math.floor(names.length*Math.random());
+		name.innerHTML = names[rd];
+	}
+	
+	function changeBtn() {
+		if(btn.innerText == "开始") {
+			btn.innerText = "停止";
+			timeIntervalID = setInterval("changeName()", 1);
+			music.playLoopMusic();
+		} else {
+			btn.innerText = "开始";
+			clearInterval(timeIntervalID);
+			music.playStopMusic();
+		}
+	}
+	
+	
+	</script>
+</body>
+</html>

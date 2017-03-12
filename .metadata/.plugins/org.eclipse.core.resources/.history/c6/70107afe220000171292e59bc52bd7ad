@@ -1,8 +1,0 @@
-package day13_01_c3p0;
-
-public class C3P0Utils {
-
-	public C3P0Utils() {
-	}
-
-}
