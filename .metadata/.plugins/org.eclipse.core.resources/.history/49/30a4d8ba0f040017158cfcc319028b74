@@ -1,8 +1,0 @@
-package com.iphone567.com.web.action;
-
-public class HelloAction {
-
-	public HelloAction() {
-	}
-
-}

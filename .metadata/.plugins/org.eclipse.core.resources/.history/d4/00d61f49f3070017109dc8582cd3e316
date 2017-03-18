@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.iphone567.domain">
+	<!-- 
+	dynamic-insert: true 当属性为null时，不参加insert操作
+	dynamic-update: true 当属性没有修改过时，不参加update操作 
+	 -->
+	<class name="User" table="user">
+		<id name="id" column="id">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="username" column="username"></property>
+		<property name="password" column="password"></property>
+	</class>
+	
+</hibernate-mapping>

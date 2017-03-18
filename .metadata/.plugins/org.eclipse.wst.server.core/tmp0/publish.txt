@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Fri Mar 10 12:49:26 CST 2017
-org.eclipse.jst.jee.server\:day25_register=/Users/Nihility-Ming/Tomcat-test/webapps/day25_register
+#Sat Mar 18 18:48:16 CST 2017
+org.eclipse.jst.jee.server\:/binary\:/Users/Nihility-Ming/Desktop/note_for_Java_EE/Spring_day03_ssh4/WebContent/WEB-INF/lib/spring-web-4.0.4.RELEASE.jar=/Users/Nihility-Ming/Tomcat-test/webapps/Spring_day03_ssh4/WEB-INF/lib/spring-web-4.0.4.RELEASE.jar
+org.eclipse.jst.jee.server\:Spring_day03_ssh4=/Users/Nihility-Ming/Tomcat-test/webapps/Spring_day03_ssh4

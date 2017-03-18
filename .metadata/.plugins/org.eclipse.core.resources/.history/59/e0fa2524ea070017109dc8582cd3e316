@@ -1,0 +1,31 @@
+package com.iphone567.test;
+
+import org.hibernate.classic.Session;
+import org.junit.Test;
+
+import com.iphone567.domain.User;
+import com.iphone567.utils.HibernateUtils;
+
+public class MyTest {
+
+	@Test
+	public void fun1() {
+		Session session = HibernateUtils.openSession();
+
+		User u = new User();
+		u.setUsername("黄家驹");
+		u.setPassword("123456");
+
+		session.save(u);
+
+		session.close();
+	}
+	
+	@Test
+	public void testUtils() {
+		Session session = HibernateUtils.openSession();
+		session.close();
+		System.out.println(session);
+	}
+
+}

@@ -8,7 +8,7 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import com.iphone567.tally.domain.Tally;
-import com.iphone567.tally.tools.DBUtils;
+import com.iphone567.tally.utils.DBUtils;
 
 public class TallyDao {
 	private QueryRunner queryRunner = DBUtils.getQueryRunner();

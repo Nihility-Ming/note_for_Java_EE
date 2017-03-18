@@ -1,8 +1,0 @@
-package com.iphone567.listener;
-
-public class MyServletContextListener {
-
-	public MyServletContextListener() {
-	}
-
-}
